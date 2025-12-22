@@ -5,12 +5,14 @@ from django.views.decorators.http import require_http_methods
 import json
 import requests
 import uuid
+import os
 from .models import Conversation, Message
 
 # Free AI API configuration
 USE_OLLAMA = True
 OLLAMA_URL = "http://localhost:11434/api/generate"
 HUGGINGFACE_API_URL = "https://api-inference.huggingface.co/models/microsoft/DialoGPT-medium"
+HF_TOKEN = os.environ.get('HF_TOKEN', '')
 
 def get_ai_response(message, conversation_history=None):
     """Get AI response using free API"""
@@ -32,7 +34,7 @@ def get_ai_response(message, conversation_history=None):
                 return "Ollama is not running. Please start Ollama or use Hugging Face API."
         else:
             # Use Hugging Face API (free tier)
-            headers = {"Authorization": "Bearer YOUR_FREE_API_KEY"}
+            headers = {"Authorization": f"Bearer {HF_TOKEN}"}
             payload = {
                 "inputs": message,
                 "parameters": {
