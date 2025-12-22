@@ -84,11 +84,21 @@ Learn to deploy and maintain ML systems.
 
 ---
 
-## 🗂️ Quick Reference Files
+## 🗂️ Advanced Topics & Specialized Guides
 
+### Data Handling & Training
+- **[14_Large_Dataset_Training_Guide.md](14_Large_Dataset_Training_Guide.md)** - Handle and train on large datasets
+- **[15_Train_Test_Split_Complete_Guide.md](15_Train_Test_Split_Complete_Guide.md)** - Complete train/test strategies
+
+### AI APIs & Integration
+- **[17_MCP_and_Free_AI_API_Guide.md](17_MCP_and_Free_AI_API_Guide.md)** - MCP protocol and free AI API integration
+
+### Reference & Q&A
 - **[11_Libraries_Cheat_Sheet.md](11_Libraries_Cheat_Sheet.md)** - Quick reference for all libraries
 - **[12_Common_Problems_Solutions.md](12_Common_Problems_Solutions.md)** - Troubleshooting guide
 - **[13_Interview_Preparation.md](13_Interview_Preparation.md)** - AI engineer interview prep
+- **[16_Library_Comparison_Benchmarks.md](16_Library_Comparison_Benchmarks.md)** - Complete library comparison and benchmarks
+- **[18_Complete_AI_QA_Guide.md](18_Complete_AI_QA_Guide.md)** - Comprehensive AI Q&A guide
 
 ---
 
